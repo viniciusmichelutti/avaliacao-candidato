@@ -22,11 +22,11 @@ meteor run
 Ou se preferir, "npm start"
 
 ## Todo
-[x] Área de cadastro
-[x] Área administrativa para visualizar os registros
-[x] Real time (área adm dar update sozinho conforme surgirem registros)
-[ ] Implementar login para área administrativa
-[ ] Testes com Mocha
+* ~~Área de cadastro~~
+* ~~Área administrativa para visualizar os registros~~
+* ~~Real time (área adm dar update sozinho conforme surgirem registros)~~
+* Implementar login para área administrativa
+* Testes com Mocha
 
 ## Observações
 ### Email
