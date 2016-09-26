@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@space: 15px;
+@bigmargin: @space * 4;
+@blue: #0192F6;
+@darkblue: #456288;
+@fontcolor: @darkblue;
+@white: #FFF;
+@gray: #B9B9B9;
+@green: #61c92a;
+@lightgray: #EEE;
+
+* { box-sizing: border-box; }
+body {
+	color: @fontcolor;
+	font-family: 'Open Sans', Tahoma, sans-serif;
+    background-color:#F9F9FA;
+	font-size: 1em;
+}
+
+header { padding:@space; background-color:@blue; }
+footer div { font-size:.5em; border-top:1px solid @lightgray; margin-top:@space; padding:@space 0; }
+section { padding:@space 0; }
+
+nav {
+    .right;
+    
+    
+    li {
+        .left;
+        list-style-type:none;
+        
+        a {
+            color:@white;
+            text-transform: uppercase;
+            display:block;
+            padding:10px @space;
+            font-size:.7em;
+        }
+    }
+    
+}
+
+h1 { font-size:1.5em; line-height:3em; }
+a { text-decoration: none; font-weight:bold; }
+
+form {
+    label {
+        display:block;
+        font-weight:bold;
+        margin-top:@space;
+        
+        .optional { font-size:.7em; text-transform:uppercase; color:@gray; }
+    }
+    
+    input[type="text"], input[type="email"] { display:block; padding:@space; width:50%; }
+}
+
+.left { float:left; }
+.right { float:right; }
+.wrapper { padding:0 80px; }
+.textCenter { text-align:center; }
+.green { color: @green; }
+
+.button {
+    padding:@space;
+    background-color:@blue;
+    color:@white;
+    border:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin-top:@space;
+    cursor:pointer;
+    
+    &:hover { background-color:@darkblue; }
+}
+.fa { margin-right:@space; }
+.block {
+    padding: @space;
+    background-color: @white;
+    border: 1px solid @lightgray;
+    margin-bottom: @space;
+    display: block;
+    border-radius: 3px;
+}
+
+.title { font-size:3em; font-weight:bold; }
+.subTitle { font-size:1.5em; }
+
+#welcome { 
+    padding:@bigmargin 0; 
+    background-color:@white; 
+    border-bottom:1px solid @lightgray;
+}
+#success { margin:@bigmargin 0; }

@@ -1,0 +1,63 @@
+<template name="skills">
+    <div id="welcome">
+        <div class="wrapper">
+            <p class="title">Olá,</p>
+            <p class="subTitle"><strong>Bem vindo</strong> à avaliação de conhecimentos e habilidades para desenvolvedor.</p>
+            <p class="subTitle">Preencha o formulário abaixo para obtermos maiores detalhes sobre o seu perfil.</p>
+        </div>
+    </div>
+
+    <section class="wrapper">
+        <h1>Habilidades</h1>
+
+        <form action="#" method="POST">
+            <label>Nome</label>
+            <input type="text" name="completeName" placeholder="Ex.: João Maria José" required />
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Ex.: joao@gmail.com" required />
+
+            <label>
+                <span class="fa fa-html5"></span>
+                HTML {{> optional}}</label>
+            <div id="htmlRange"></div>
+            
+            <label>
+                <span class="fa fa-css3"></span>
+                CSS {{> optional}}</label>
+            <div id="cssRange"></div>
+            
+            <label>
+                <span class="fa fa-jsfiddle"></span>
+                Javascript {{> optional}}</label>
+            <div id="javascriptRange"></div>
+            
+            <label>
+                <span class="fa fa-fire"></span>
+                Python {{> optional}}</label>
+            <div id="pythonRange"></div>
+            
+            <label>
+                <span class="fa fa-heart"></span>
+                Django {{> optional}}</label>
+            <div id="djangoRange"></div>
+            
+            <label>
+                <span class="fa fa-apple"></span>
+                Desenvolvimento iOS {{> optional}}</label>
+            <div id="iosRange"></div>
+            
+            <label>
+                <span class="fa fa-android"></span>
+                Desenvolvimento Android {{> optional}}
+            </label>
+            <div id="androidRange"></div>
+
+            <input type="submit" value="Enviar" class="button" />
+        </form>
+    </section>
+</template>
+
+<template name="optional">
+    <span class="optional">- Campo Opcional</span>
+</template>

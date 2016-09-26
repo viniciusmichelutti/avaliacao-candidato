@@ -1,0 +1,29 @@
+<template name="mainLayout">
+    {{> header}}
+    
+    {{> yield}}
+    
+    {{> footer}}
+</template>
+
+<template name="header">
+    <header>
+        <div class="wrapper">
+            <img src="/logo.png" alt="meuspedidos" />
+            <nav>
+                <ul>
+                    <li><a href="{{pathFor 'skills'}}">Avaliação</a></li>
+                    <li><a href="{{pathFor 'admin'}}">Administração</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</template>
+
+<template name="footer">
+    <footer class="wrapper">
+        <div>
+            por Vinícius Michelutti
+        </div>
+    </footer>
+</template>

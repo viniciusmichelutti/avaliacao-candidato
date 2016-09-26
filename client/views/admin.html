@@ -1,0 +1,13 @@
+<template name="admin">
+    <div class="wrapper">
+        <h1>Administração</h1>
+        
+        {{#each applications}}
+        <div class="block">
+            <h2>{{name}}</h2>
+            <p>{{email}}</p>
+            <p>Vaga {{jobName skills}}</p>
+        </div>
+        {{/each}}
+    </div>
+</template>

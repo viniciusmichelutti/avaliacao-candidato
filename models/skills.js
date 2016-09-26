@@ -1,0 +1,1 @@
+Skills = ['html', 'css', 'javascript', 'python', 'django', 'ios', 'android']
