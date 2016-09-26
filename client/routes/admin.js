@@ -6,7 +6,7 @@ Router.route("/admin", {
     action: function() {
         this.render("admin", {
             data: function() {
-                return { applications: Applicant.find() }
+                return { applications: Applicant.find({}, {sort: {createdAt: -1}}) }
             }
         });
     }
