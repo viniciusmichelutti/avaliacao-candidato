@@ -16,8 +16,14 @@ Template.skills.events({
             });
         });
         
+        var _this = this;
+        
         Meteor.call("addApplicant", register, function(e, id) {
-            Router.go("success");
+            if (!e) {
+                Router.go("success");
+            } else {
+               $('#errorBlock').html(e.details);
+            }
         });
     }
 });

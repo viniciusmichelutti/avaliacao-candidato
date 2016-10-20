@@ -12,21 +12,25 @@ Tudo que é necessário para rodar a aplicação, é instalar o [Meteor](https:/
 
 1. Possuir [Meteor](https://www.meteor.com/) 
 
-## Rodando
+## Scripts
+### Inicializando o projeto
 Após instalar o meteor, basta executar 
 
 ```
-meteor run
+npm start
 ```
 
-Ou se preferir, "npm start"
+### Rodando testes
+```
+npm test
+```
 
 ## Todo
 * ~~Área de cadastro~~
 * ~~Área administrativa para visualizar os registros~~
 * ~~Real time (área adm dar update sozinho conforme surgirem registros)~~
+* ~~Testes~~
 * Implementar login para área administrativa
-* Testes com Mocha
 
 ## Observações
 ### Email
