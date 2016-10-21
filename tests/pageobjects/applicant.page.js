@@ -2,7 +2,7 @@ import Page from './Page';
 
 class ApplicantPage extends Page {
     get nameField() { return browser.element('[name=completeName]'); }
-	get emailField() { return browser.element('[name=email]'); }
+    get emailField() { return browser.element('[name=email]'); }
     get submitButton() { return browser.element('input[type=submit]'); }
     
     open() {

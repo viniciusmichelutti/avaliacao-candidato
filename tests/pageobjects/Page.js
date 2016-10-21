@@ -3,7 +3,6 @@ class Page {
 
 	open(path) {
 		browser.url('http://localhost:3000/' + path);
-
 		this.body.waitForExist();
 	}
 }

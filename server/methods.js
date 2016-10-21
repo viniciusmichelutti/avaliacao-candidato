@@ -1,7 +1,7 @@
 Meteor.methods({
 
     addApplicant: function(application) {
-        Applicant.isValid(application);
+        Applicant.validate(application);
         
         SSR.compileTemplate('emailTemplate', Assets.getText('email-template.html'))
         

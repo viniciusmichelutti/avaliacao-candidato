@@ -15,9 +15,7 @@ Template.skills.events({
                 value: skillValue.result.from
             });
         });
-        
-        var _this = this;
-        
+
         Meteor.call("addApplicant", register, function(e, id) {
             if (!e) {
                 Router.go("success");

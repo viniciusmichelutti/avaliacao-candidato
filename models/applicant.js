@@ -28,10 +28,14 @@ Applicant.calculateJob = function(skills) {
         jobs.push("Mobile");
     }
     
+    if (!jobs.length) {
+        jobs.push("")
+    }
+    
     return jobs;
 }
 
-Applicant.isValid = function(application) {
+Applicant.validate = function(application) {
     if (application.name == '' || application.name.length <= 3) {
         throw new Meteor.Error(500, 'Error 500', 'Nome não pode ser vazio e menor que 3 caracteres!');
     }
